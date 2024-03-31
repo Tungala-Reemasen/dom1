@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Customization</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body id="documentBody">
+    <div class="form-container">
+        <label for="color">Text Color:</label>
+        <input type="color" id="color" name="color" value="#000000"><br><br>
+
+        <label for="backgroundColor">Background Color:</label>
+        <input type="color" id="backgroundColor" name="backgroundColor" value="#ffffff"><br><br>
+
+        <label for="font">Font:</label>
+        <select id="font">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <!-- Add more fonts as needed -->
+        </select><br><br>
+
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" name="fontSize" min="1" max="200" value="12"><br><br>
+
+        <button onclick="updateDocument()">Update Document</button>
+    </div>
+
+    <div class="document-container">
+        <p id="documentContent">This is a sample text.</p>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>
